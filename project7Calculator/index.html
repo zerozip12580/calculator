@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="bigbox">
+        <header class="header">
+            <input type="text" class="input" id="inputField">
+        </header>
+        <main>
+            <div class="box first">
+                <button class="a b" onclick="input('7')">7</button>
+                <button class="a b" onclick="input('8')">8</button>
+                <button class="a b" onclick="input('9')">9</button>
+                <button class="a sign" onclick="operation('+')">+</button>
+            </div>
+            <div class="box second">
+                <button class="a c" onclick="input('4')">4</button>
+                <button class="a c" onclick="input('5')">5</button>
+                <button class="a c" onclick="input('6')">6</button>
+                <button class="a sign" onclick="operation('-')">-</button>
+            </div>    
+            <div class="box third">
+                <button class="a d" onclick="input('1')">1</button>
+                <button class="a d" onclick="input('2')">2</button>
+                <button class="a d" onclick="input('3')">3</button>
+                <button class="a sign" onclick="operation('*')">*</button>  
+            </div>
+            <div class="box forth">
+                <button class="a sp" onclick="input('0')">0</button>
+                <button class="a dian" onclick="input('.')">.</button>
+                <button class="a sign" onclick="result('=')">=</button>
+                <button class="a sign" onclick="operation('/')">/</button>
+            </div>           
+        </main>
+        <footer>
+            <button class="clear" onclick="clearLastInput()">C</button>
+            <button class="clear all" onclick="clearAll()">AC</button>
+        </footer>
+    </div>
+    <script src="./jks/index.js"></script>
+</body>
+</html>
